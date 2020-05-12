@@ -65,6 +65,7 @@
     font-size: 20px;
     position: relative;
     overflow: hidden;
+    white-space: nowrap;
     @include from(1720px) {
         font-size: 20px;
     }
@@ -146,7 +147,7 @@
 .menu-item a:after {
     content: attr(data-hover);
     position: absolute;
-    top: -30px;
+    top: -35px;
     left: 0;
     transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
