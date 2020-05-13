@@ -147,11 +147,14 @@
 .menu-item a:after {
     content: attr(data-hover);
     position: absolute;
-    top: -35px;
+    top: -30px;
     left: 0;
     transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
+    @include to(480px) {
+        top: -35px;
+    }
 }
 
 // .menu-item:hover a,

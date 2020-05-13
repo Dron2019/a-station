@@ -36,7 +36,6 @@ window.addEventListener("scroll", function(event) {
     screen8LettersDecor();
 
 
-    console.log(document.querySelector('.screen2').getBoundingClientRect());
 
 
 
@@ -397,7 +396,7 @@ function letterSeparation(node1, animationName) {
 
 document.querySelectorAll('.separate-letters-js').forEach(el => {
     letterSeparation(el, 'fadeInLeft');
-    console.log(el.dataset);
+    // console.log(el.dataset);
 
 })
 
