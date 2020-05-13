@@ -290,8 +290,7 @@
     }
     &__video {
         position: relative;
-        @include shift-left(2);
-        @include size(7);
+        @include size(12);
         margin-top: 35px;
         margin-bottom: 30px;
     }

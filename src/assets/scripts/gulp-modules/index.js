@@ -446,12 +446,17 @@ $('.link-detailed, .menu-item a').click(function() {
 
 // preloadConfig(localStorage.getItem('visited'));
 const video = document.querySelector('.screen3__video-js');
-video.onclick = () => {
+
+video.closest('.screen3__video').onclick = (evt) => {
+
+    evt.preventDefault();
     if (video.closest('.screen3__video').classList.contains('playing')) {
+
         video.pause();
         // video.closest('.screen3__video').classList.remove('playing');
     } else {
         video.play();
+        video.setAttribute('controls', '');
         // video.closest('.screen3__video').classList.add('playing');
     }
 }
